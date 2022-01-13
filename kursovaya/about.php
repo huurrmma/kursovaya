@@ -1,6 +1,6 @@
 
 <?php
-$title = "Ваш отзыв";
+    $title = "Ваш отзыв";
     require "blocks/header.php";
 ?>
     <div class = "container mt-2">
