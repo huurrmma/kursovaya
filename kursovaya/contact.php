@@ -3,7 +3,7 @@
     require "blocks/header.php";
 ?>
 
-<dl class="row">
+<dl class="row mt-4">
   <dt class="col-sm-3">Номер для любой экстренной ситуации</dt>
   <dd class="col-sm-9">112</dd>
 
