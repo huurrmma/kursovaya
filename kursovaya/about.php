@@ -1,4 +1,3 @@
-
 <?php
     $title = "Ваш отзыв";
     require "blocks/header.php";

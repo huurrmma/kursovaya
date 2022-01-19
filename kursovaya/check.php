@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
     $name = $_POST['username'];
     $email = $_POST['email'];
     $theme = $_POST['theme'];
@@ -15,9 +15,7 @@
     header('Location: about.php');
     exit;
     }
-?>     -->
 
-<?php
     $to = "hurmasort@gmail.com"; // емайл получателя данных из формы
     $tema = "Форма обратной связи на PHP"; // тема полученного емайла
     $message = "Ваше имя: ".$_POST['username']."<br>";//присвоить переменной значение, полученное из формы name=name

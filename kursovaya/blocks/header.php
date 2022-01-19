@@ -33,6 +33,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="parks.php">Все площадки</a>
+                    </li>
                     <li class="nav-item">
                     <a class="nav-link" href="about.php">Ваш отзыв</a>
                     </li>
