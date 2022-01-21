@@ -49,3 +49,11 @@
 .in {
     padding-bottom: 70px;
 }
+
+.map { 
+  float: right;
+}
+
+.im {
+  height: 504px;
+}

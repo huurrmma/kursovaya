@@ -43,6 +43,9 @@
                     <a class="nav-link" href="contact.php">Полезная информация</a>
                     </li>
                     <li class="nav-item">
+                    <a class="nav-link" href="contactr.php">Контакты разработчика</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="enter.php">Вход</a>
                     </li>
                 </ul>
