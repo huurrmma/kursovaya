@@ -57,3 +57,11 @@
 .im {
   height: 504px;
 }
+
+.res {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
+    
+}

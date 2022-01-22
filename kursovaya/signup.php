@@ -7,10 +7,6 @@ session_start();
 
 
 
-// unset($_SESSION['name']);
-// unset($_SESSION['login']);
-// unset($_SESSION['password']);
-
 $name = $_POST['name'];
 $login = $_POST['login'];
 $pass = $_POST['password'];
@@ -28,7 +24,7 @@ if (!empty($_POST)){
 
     else{
     $result = mysqli_query($connect, "SELECT * FROM Users WHERE login=\"".$_POST['login']."\"");
-    //echo mysqli_num_rows($result);
+    
     if(mysqli_num_rows($result) == 0){
         mysqli_query($connect, "INSERT INTO Users (name, login, password) VALUES (
             \"".$_POST["name"]."\", 
@@ -37,7 +33,7 @@ if (!empty($_POST)){
             )"
         );
     }
-    //$id = mysqli_insert_id($connect);
+    
     header("Location: enter.php"); 
 }
 }
@@ -64,7 +60,7 @@ $content = "
         <input  class = 'form-control' type=\"password\" name=\"password\" >
     </div>
     <div class = 'mt-3'>
-        <button class = 'btn btn-outline-secondary mt-3' type=\"submit\">Регистрация</button>
+        <button class = 'btn btn-outline-secondary mt-3' type=\"submit\">Зарегистрироваться</button>
     </div>
 </form>
 </div>

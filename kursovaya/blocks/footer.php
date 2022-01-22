@@ -1,5 +1,5 @@
         <footer class="fixed-bottom text-center p-2 text-dark" style="background-color:#A4CFBB">
-            Все права защищены &copy; 2022 <br>
+            Московский политехнический университет &copy; 2022 <br>
             <?php
             echo date('d.m.Y H:i:s') . '<br>';
             ?>

@@ -13,6 +13,7 @@
         <input type="submit" value = "Отправить" class = "btn btn-success">
     </form>
 </div>
+
 <?php
      require "blocks/footer.php";
 

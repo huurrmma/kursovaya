@@ -13,11 +13,11 @@
 
     // Получаем запрос
     $inputSearch = $_REQUEST['search']; 
- 
+    
     // Создаём SQL запрос
     $sql = "SELECT ObjectName, NameWinter, District, Address, Email, WebSite, HelpPhone, SurfaceTypeWinter FROM `Parks` WHERE `ObjectName` LIKE '%$inputSearch%' OR `District` LIKE '%$inputSearch%'";
-    // Отправляем SQL запрос
-    $result = $connect -> query($sql);
+     // Отправляем SQL запрос
+     $result = $connect -> query($sql);
 
     function doesItExist(array $arr) {
         // Создаём новый массив
@@ -26,8 +26,8 @@
         );
         return $data; // Возвращаем этот массив
     }
-    
-    
+        
+        
     function countParks($result) { 
         // Проверка на то, что строк больше нуля
         if ($result -> num_rows > 0) {
@@ -37,10 +37,10 @@
                 $arr = doesItExist($row);
                 // Вывод данных
                 echo "Название парка: ". $row['ObjectName'] ."<br>
-                      Номер площадки: ". $row['NameWinter'] ."<br>
-                      Район: ". $row['District'] ."<br>
-                      Адрес: ". $row['Address'] ."<br>
-                      Тип покрытия: ". $row['SurfaceTypeWinter'] ."<hr>";
+                    Номер площадки: ". $row['NameWinter'] ."<br>
+                    Район: ". $row['District'] ."<br>
+                    Адрес: ". $row['Address'] ."<br>
+                    Тип покрытия: ". $row['SurfaceTypeWinter'] ."<hr>";
             }
         // Если данных нет
         } 
@@ -50,11 +50,11 @@
     }
 ?>
 
-
-<?php
-    countParks($result); // Функция вывода пользователей
-?>
-
+<div class="res">
+    <?php
+        countParks($result);
+    ?>
+</div>
 
 
 
